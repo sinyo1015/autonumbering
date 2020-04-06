@@ -27,10 +27,6 @@ class AutoNumber{
 
 	public function make($existing){
 
-		if($existing === null){
-			throw new MissingArgumentException("\$existing parameter needed for adding last number");
-		}
-
 		$number = (int) substr($existing, $this->indexNext, $this->lastIndex);
 
 		$newNumber = $number + 1;
