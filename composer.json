@@ -10,7 +10,7 @@
     ],
     "minimum-stability": "dev",
     "autoload": {
-        "psr-4": {"sinyo1015\\autonumbering\\": "src/"}
+        "psr-4": {"Sinyo1015\\AutoNumbering\\": "src/"}
     },
     "require": {}
 }
