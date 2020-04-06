@@ -2,7 +2,8 @@
 
 namespace Sinyo1015\AutoNumbering;
 
-use Sinyo1015\AutoNumbering\Exception;
+use Sinyo1015\AutoNumbering\Exception\MissingArgumentException;
+use Sinyo1015\AutoNumbering\Exception\StringLengthException;
 
 class AutoNumber{
 	protected $prefix;
