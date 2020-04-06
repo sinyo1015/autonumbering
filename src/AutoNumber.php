@@ -25,12 +25,17 @@ class AutoNumber{
 		}
 	}
 
-	public static function make(){
-		$number = (int) substr($this->prefix, $this->indexNext, $this->lastIndex);
+	public function make($existing){
+
+		if($existing === null){
+			throw new MissingArgumentException("\$existing parameter needed for adding last number");
+		}
+
+		$number = (int) substr($existing, $this->indexNext, $this->lastIndex);
 
 		$newNumber = $number + 1;
 
-		$realLength = ($this->lastIndex - $this->nextIndex) + 1;
+		$realLength = ($this->lastIndex - $this->indexNext);
 
 		$formatter = "%0" . $realLength . "s";
 
