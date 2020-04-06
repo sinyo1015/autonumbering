@@ -1,0 +1,16 @@
+{
+    "name": "sinyo1015/autonumbering",
+    "description": "Yet another library to generate auto numbering in your databases",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gilang R.",
+            "email": "sinyo101520@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {"sinyo1015\\autonumbering\\": "src/"}
+    },
+    "require": {}
+}
